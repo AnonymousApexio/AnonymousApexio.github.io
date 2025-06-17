@@ -1,0 +1,376 @@
+/* CSS du à propos de moi */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.corps {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for readability */
+    min-height: 100vh;
+}
+/* Conteneur: CSS Grid */
+.conteneur {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+}
+
+/* Barre latéral */
+.barre_latéral {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #1c1f25;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #00ff9d;
+    margin-bottom: 10px;
+}
+
+.barre_latéral h1 {
+    font-size: 1.5rem;
+    color: #00ff9d;
+    margin-bottom: 5px;
+}
+
+.barre_latéral ul {
+    list-style: none;
+}
+
+.barre_latéral-nav ul li {
+    margin: 15px 0;
+}
+
+.barre_latéral-nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.barre_latéral-nav ul li a:hover {
+    background-color: #00ff9d;
+    color: #000;
+	font-weight: bold;
+}
+
+.barre_latéral-contact {
+    border-top: 1px solid #00ff9d;
+    padding-top: 20px;
+}
+
+.barre_latéral-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00ff9d;
+}
+
+.barre_latéral-contact ul {
+    list-style: none;
+}
+
+.barre_latéral-contact ul li {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.barre_latéral-contact ul li a {
+    color: #00ff9d;
+    text-decoration: none;
+}
+
+.barre_latéral-contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenue principal */
+.contenue {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contenue h2 {
+    font-size: 1.5rem;
+    color: #00ff9d;
+    margin-bottom: 20px;
+}
+
+/* A propos Section */
+.propos-moi {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1f1f1f; 
+    border-radius: 8px;
+    text-align: left;
+    color: #e0e0e0; 
+}
+
+.propos-moi h2 {
+    font-size: 1.8rem;
+    color: #00ff9d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.propos-contenue {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.propos-contenue p {
+    margin-bottom: 15px;
+}
+
+.propos-contenue strong {
+    color: #00ff9d;
+    font-weight: 600;
+}
+/* Section Compétences */
+.section-compétences {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    text-align: left;
+    color: #e0e0e0;
+}
+
+.section-compétences h2 {
+    font-size: 1.8rem;
+    color: #00ff9d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Catégories de compétence */
+.compétences-catégories {
+    margin-bottom: 40px;
+}
+
+.compétences-catégories h3 {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+/* Grid de compétences pour les compétences pro */
+.grid-compétences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Compétences group individuel */
+.compétence-catégorie .IT {
+    font-size: 1.2rem;
+    color: #0048ff;
+    margin-bottom: 10px;
+}
+
+.compétence-catégorie .CS {
+    font-size: 1.2rem;
+    color: #ffe833;
+    margin-bottom: 10px;
+}
+
+.compétence-catégorie .DSec {
+    font-size: 1.2rem;
+    color: #3cc6c7;
+    margin-bottom: 10px;
+}
+
+.compétence-catégorie .OSec {
+    font-size: 1.2rem;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.compétence-catégorie ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.compétence-catégorie ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #b0b0b0;
+}
+
+/* Compétences humaine */
+.compétences-humaine-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.compétences-humaine-list li {
+    background-color: #00ff9d;
+    color: #000;
+	font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.compétences-humaine-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Section expérience */
+#expériences {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+}
+
+#expériences h2 {
+    font-size: 1.8rem;
+    color: #00ff9d;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Experiences */
+.grid-expériences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Objet D'expérience Individuel */
+.objet-experience {
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.objet-experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Headers in Experience */
+.objet-experience header h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.objet-experience header p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 12px;
+}
+
+/* Experience Details */
+.objet-experience ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.objet-experience ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #aaa;
+}
+
+.objet-experience ul li ul {
+    margin-top: 5px;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+/* Section education */
+#éducations {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+}
+
+#éducations h2 {
+    font-size: 1.8rem;
+    color: #00ff9d;
+    margin-bottom: 20px;
+}
+
+/* Grid pour section éducation */
+.grid-éducations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Objet d'éducation individuel */
+.objet-éducation {
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.objet-éducation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Header dans Education */
+.objet-éducation header h3, header h3 a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5px;
+	text-decoration: underline;
+}
+
+.objet-éducation header p {
+    font-size: 0.9rem;
+    color: #eee;
+    margin-bottom: 12px;
+}
+
+.objet-éducation p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 12px;
+}
+
+/* Éducation Compétences List */
+.objet-éducation ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.objet-éducation ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #aaa;
+}

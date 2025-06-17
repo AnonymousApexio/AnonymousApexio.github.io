@@ -1,0 +1,131 @@
+/* Ajout de la responsiveness */
+@media (max-width: 992px) {
+    .projets-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+
+@media (max-width: 768px) {
+    .barre_latéral {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .barre_latéral-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .contenue {
+        padding: 20px;
+    }
+	
+    .propos-moi {
+        padding: 15px;
+    }
+
+    .propos-moi h2 {
+        font-size: 1.5rem;
+    }
+
+    .propos-contenue {
+        font-size: 0.95rem;
+    }
+    .conteneur {
+        grid-template-columns: 1fr;
+    }
+	
+    .grid-compétences {
+        grid-template-columns: 1fr;
+    }
+
+    .compétences-humaine-list {
+        justify-content: center;
+    }
+
+	.grid-expériences {
+        grid-template-columns: 1fr;
+    }
+	
+	.grid-éducations {
+        grid-template-columns: 1fr;
+    }
+
+    .arbre-branche {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 5%;
+    }
+
+    .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .section-header h2 {
+    font-size: 2.2rem;
+    }
+
+    .projets-grid {
+    grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    }
+
+    .footer-logo {
+    align-items: center;
+    text-align: center;
+    }
+
+    .social-links {
+    justify-content: center;
+    }
+
+    .project-title {
+        font-size: 2.2rem;
+    }
+    
+    .project-subtitle {
+        font-size: 1.2rem;
+    }
+            
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+    text-align: center;
+    }
+
+    .lightbox-img {
+        max-height: 60vh;
+    }
+    
+    .lightbox-btn {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}

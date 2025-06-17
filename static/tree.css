@@ -1,0 +1,265 @@
+/* CSS des Arbres de domaines */
+/* Conteneur global pour le texte d'introduction et l'arbre */
+.conteneur-arbre-compétence {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre tout le contenu */
+    gap: 20px; /* Espacement entre les éléments */
+    margin-bottom: 40px; /* Espacement avec la suite de la page */
+}
+
+/* Style pour le texte d'introduction */
+.Introduction_txt {
+    background-color: #04102a; 
+    color: #00ff9d; 
+    border: 2px solid #00ff9d;
+    padding: 20px 30px; 
+    border-radius: 10px; 
+    text-align: center;
+    font-size: 1.2rem; 
+    line-height: 1.8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    margin: 20px auto; 
+    max-width: 900px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.Introduction_txt:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 255, 157, 0.3); 
+}
+
+/* Style pour l'arbre*/
+.arbre-compétence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style pour les branches */
+.arbre-branche {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; /* Ajoute des espaces entre chaque nodes */
+    flex-wrap: wrap; /* Fait que les noeuds sont entourer */
+    flex-direction: row; /* Mise en page horizontal pour les sous ensembles */
+    margin-top: 30px;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* Je sais plus ce que ça fait mais j'ai peur que ce soit important */
+.arbre-branche::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #00ff9d;
+}
+
+.arbre-branche.hidden {
+    display: none; 
+}
+
+.wrap-noeud-arbre {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Connections entre les Noeuds */
+.wrap-noeud-arbre::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background-color: #00ff9d;
+}
+
+/* Le noeud racine */
+.noeud-racine {
+    background-color: #008c66;
+    color: white;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: default;
+}
+
+/* Les noeuds des arbres */
+.noeud-arbre {
+    background-color: #00ff9d;
+    color: #04102a;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+
+.noeud-arbre-debutant {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.noeud-arbre-modere {
+    background-color: #76ffcb;
+    color: #2e2e2e;
+}
+
+.noeud-arbre-intermediaire {
+    background-color: #00ff9d;
+    color: #000000;
+}
+
+.noeud-arbre-avance {
+    background-color: #00462b;
+    color: #ffffff;
+}
+
+.noeud-arbre-professionnel {
+    background-color: #002215;
+    color: #ffffff;
+}
+
+.noeud-arbre-expert {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.noeud-arbre:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
+
+/* Tooltip */
+.noeud-arbre:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 110%; /* Display above the node */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #04102a;
+    color: white;
+    padding: 0px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    width: 250px;
+    text-align: center;
+    white-space: pre-wrap;
+    z-index: 1000; /* Fait que le contenue de la description apparait au dessus des autres noeuds */
+}
+
+/* Utilisation d'un pseudo-élément indépendant pour la description du contenu */
+.noeud-arbre:hover::before {
+    content: attr(data-description) "\A\A Niveau: " attr(data-level);
+    position: absolute;
+    bottom: 110%; /* Display above the node */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #04102a;
+    color: white;
+    padding: 0px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    width: 250px;
+    text-align: center;
+    white-space: pre-wrap; /* Ajoute un genre d'espace pour la description */
+    z-index: 1000;
+    line-height: 1.4;
+}
+
+/* Ensure sibling nodes stay below the tooltip */
+.noeud-arbre:hover {
+    z-index: 1000;
+}
+
+/* Légende améliorée */
+.legend {
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #00ff9d;
+    border-radius: 15px;
+    background: rgba(9, 38, 100, 0.8);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.legend h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #00ff9d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.legend ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.legend ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.legend ul li:hover {
+    background: rgba(0, 255, 157, 0.2);
+    transform: translateY(-3px);
+}
+
+.legend-couleur {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.legend-couleur.debutant {
+    background-color: #ffffff; 
+}
+
+.legend-couleur.modere {
+    background-color: #76ffcb; 
+}
+
+.legend-couleur.intermediaire {
+    background-color: #00ff9d; 
+}
+
+.legend-couleur.avance {
+    background-color: #00462b;
+}
+
+.legend-couleur.professionnel {
+    background-color: #002215;
+}
+
+.legend-couleur.expert {
+    background-color: #000000;
+}
+
