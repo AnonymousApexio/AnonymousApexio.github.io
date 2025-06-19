@@ -193,17 +193,17 @@
         <section class="section">
             <h2 class="section-title"><i class="fas fa-images"></i> Galerie du projet</h2>
             <div class="gallery">
-                <div class="gallery-item">
+                <div class="gallery-item" data-index="0">
                     <img src="https://www.mouser.fr/images/marketingid/2018/microsites/128462768/Adafruit_HUZZAH32_ESP32_PO.png" alt="Carte Adafruit HUZZAH32 ESP32 Feather">
                     <div class="gallery-caption">Carte Adafruit HUZZAH32 ESP32 Feather</div>
                 </div>
                 
-                <div class="gallery-item">
+                <div class="gallery-item" data-index="1">
                     <img src="https://www.vlsi.fi/typo3temp/pics/v_58d24a706c.png" alt="Schéma du VS1053">
                     <div class="gallery-caption">Architecture du décodeur VS1053</div>
                 </div>
                 
-                <div class="gallery-item">
+                <div class="gallery-item" data-index="2">
                     <img src="../static/images/mqtt.png" alt="Protocole MQTT">
                     <div class="gallery-caption">Communication MQTT entre ESP32 et smartphone</div>
                 </div>
@@ -301,7 +301,7 @@
         <i class="fas fa-arrow-up"></i>
     </div>
     <script>
-        // Lightbox functionality
+         // Lightbox functionality
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightboxImg');
         const lightboxCaption = document.getElementById('lightboxCaption');
@@ -329,8 +329,6 @@
             }
         });
 
-        
-        
         // Open lightbox with clicked image
         galleryItems.forEach(item => {
             item.addEventListener('click', () => {
