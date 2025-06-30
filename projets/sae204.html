@@ -47,7 +47,7 @@
         <section class="section">
             <h2 class="section-title"><i class="fas fa-info-circle"></i> Description du projet</h2>
             <div class="section-content">
-                <p>La SAE Intégrative est un projet multidisciplinaire qui combine quatre domaines essentiels des réseaux et télécommunications :</p>
+                <p>La SAE Intégrative est un projet multidisciplinaire qui combine quatre domaines essentiels des technologies de l'information :</p>
                 <ul class="feature-list">
                     <li><strong>Réseau</strong> : Configuration d'un réseau local avec VLAN, routage inter-VLAN, services (DHCP, DNS, FTP, NTP) et sécurité (ACL, iptables)</li>
                     <li><strong>Téléphonie</strong> : Mise en place d'une infrastructure VoIP avec téléphones logiciels (Linphone) et matériel, utilisant le protocole SIP</li>
@@ -203,16 +203,20 @@
             <h2 class="section-title"><i class="fas fa-images"></i> Galerie du projet</h2>
             <div class="gallery">
                 <div class="gallery-item" data-index="0">
-                    <img src="../static/images/Infrastructure_schéma.png" alt="Topologie réseau">
-                    <div class="gallery-caption">Architecture réseau avec VLAN et services</div>
+                    <img src="../static/images/Diagramme_SAE_2.04.png" alt="Topologie réseau">
+                    <div class="gallery-caption">Diagramme de l'architecture matériel et logicielle avec VLANs, services et autre.</div>
                 </div>
                 <div class="gallery-item" data-index="1">
-                    <img src="../static/images/SAE2.04_telephonie.png" alt="Configuration téléphonie">
-                    <div class="gallery-caption">Configuration des téléphones logiciels et matériel</div>
+                    <img src="../static/images/SAE_2.04_visualisation.webp" alt="Dashboard Django">
+                    <div class="gallery-caption">Interface web de visualisation des données</div>
                 </div>
                 <div class="gallery-item" data-index="2">
-                    <img src="../static/images/SAE2.04_dashboard.png" alt="Dashboard Django">
-                    <div class="gallery-caption">Interface web de visualisation des données</div>
+                    <img src="../static/images/Liste_capteur_sae2.04.webp" alt="Liste capteurs">
+                    <div class="gallery-caption">Listes des capteurs lié en MQTT.</div>
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="../static/images/Matériel-réseau-SAE2.04.webp" alt="Matériel réseau switch, routeurs.">
+                    <div class="gallery-caption">Listes des capteurs lié en MQTT.</div>
                 </div>
             </div>
         </section>
@@ -221,15 +225,15 @@
         <section class="section">
             <h2 class="section-title"><i class="fas fa-cogs"></i> Méthodologie appliquée</h2>
             <div class="section-content">
-                <p>Pour mener à bien ce projet complexe, nous avons adopté une approche méthodique en plusieurs étapes :</p>
+                <p>Pour mener à bien ce projet complexe, nous étions à 3, et avons adopté une approche méthodique en plusieurs étapes :</p>
                 
                 <ol>
-                    <li><strong>Planification de l'infrastructure réseau</strong> : Conception des VLAN, allocation des plages IP, définition des politiques de sécurité</li>
-                    <li><strong>Configuration matérielle</strong> : Mise en place du routeur (ROAS, DHCP, NAT) et du commutateur (VLAN, port mirroring)</li>
+                    <li><strong>Planification de l'infrastructure réseau</strong> : Modélisation des VLAN, allocation des plages IP, définition des politiques de sécurité</li>
+                    <li><strong>Configuration matérielle</strong> : Mise en place du routeur (ROAS (Routeur on a stick), DHCP, NAT) et du commutateur (VLANs, port mirroring)</li>
                     <li><strong>Déploiement des services</strong> : Installation et configuration de FTP, NTP, Rsyslog sur le serveur Debian</li>
-                    <li><strong>Partie téléphonie</strong> : Configuration des téléphones logiciels (Linphone) et matériel, inscription au service SIP cloud</li>
-                    <li><strong>Développement de la solution de collecte</strong> : Création de scripts Python pour récupérer les données MQTT des capteurs</li>
+                    <li><strong>Partie téléphonie</strong> : Configuration des téléphones logiciels (Linphone) et matériel, inscription au service SIP cloud (sip.linphone.org)</li>
                     <li><strong>Conception de la base de données</strong> : Modélisation des tables pour stocker les informations des capteurs et leurs données</li>
+                    <li><strong>Développement de la solution de collecte</strong> : Création de scripts Python pour récupérer les données MQTT des capteurs</li>
                     <li><strong>Développement de l'interface web</strong> : Création d'un dashboard avec Django pour visualiser et gérer les données</li>
                     <li><strong>Tests et validation</strong> : Vérification complète de toutes les fonctionnalités et interconnectivité des systèmes</li>
                 </ol>
@@ -241,12 +245,11 @@
             <h2 class="section-title"><i class="fa-solid fa-font-awesome"></i> Conclusion</h2>
             <div class="section-content">
                 <p><strong>Ce que j'ai appris du projet:</strong><br>
-                Nous verrons bien.
-            
+                Ce projet m'a fait découvrir la liaison entre le serveur web Apache, l'interface logiciel WSGI et le cadre de développement de Django, il m'a aussi fait apprendre l'installation d'un serveur NTP, de la gestion de logs à partir d'un routeur Cisco et je pense que ça a renforcé mon savoir technique en la matière.
                 <p><strong>Ce que j'aurais pu faire autrement:</strong><br>
-                Pas encore finis donc on verra.
+                Je pense que si je devais le refaire, j'aurais modifié la partie de la communication avec mes coéquipiers, elle était très bonne pour le projet, mais durant les validations, un d'entre eux n'avais pas su répondre à certaines questions techniques liées au réseau dont je me suis chargé, je pense donc qu'il aurait été plus judicieux de prendre du temps pour que chacun comprenne les parties (ce que nous avions finalement fait pour la partie développement web).
                 <p><strong>Ce que j'ai pensé du projet:</strong><br>
-                Pour le moment, ce projet est selon moi l'un des plus enrichissants de ma formation. La possibilité de travailler sur un système complet, du matériel réseau jusqu'à l'interface utilisateur, donne une vision assez clair des infrastructures modernes.</p>
+                Ce projet a été un franc succès pour moi, j'étais en charge de l'Administration système (mise en place des serveurs), de l'administration et de la mise en place du réseau, et de la gestion de projet, je pense que nous avons eu une très bonne cohésion d'équipe, nous avons réussi tout largement avant la fin du projet grâce à ceci.
             </div>
         </section>
     </div>
