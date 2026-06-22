@@ -1,13 +1,15 @@
-/* CSS des Arbres de domaines - Version Moderne & Premium */
+/* CSS des Arbres de domaines */
 
 /* Conteneur global */
 .conteneur-arbre-compétence {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px; 
+    gap: 30px; 
     margin-bottom: 60px; 
     padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 /* Style pour le texte d'introduction (Effet Glassmorphism) */
@@ -45,25 +47,32 @@
 /* Style pour les branches */
 .arbre-branche {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* CORRECTION MAJEURE : aligne tout par le haut ! */
+    column-gap: 40px;
+    row-gap: 50px;
     margin-top: 40px;
+    padding: 20px 0;
     position: relative;
     transition: opacity 0.4s ease, max-height 0.4s ease;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Ligne horizontale connectant les branches */
 .arbre-branche::before {
     content: "";
     position: absolute;
-    top: -20px;
-    left: 10%;
-    right: 10%;
+    top: 0px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, rgba(0, 255, 157, 0.5), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 157, 0.2), transparent);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 255, 157, 0.1);
+    z-index: 0; /* Mis en arrière-plan */
 }
 
 .arbre-branche.hidden {
@@ -76,18 +85,24 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    max-width: 260px;
+    min-width: 130px;
+    flex: 0 1 auto; /* Empêche l'étirement inutile des colonnes */
+    padding: 0 10px;
 }
 
 /* Lignes verticales connectant les Noeuds */
 .wrap-noeud-arbre::before {
     content: "";
     position: absolute;
-    top: -20px;
+    top: -25px;
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 20px;
-    background: linear-gradient(to bottom, rgba(0, 255, 157, 0.5), transparent);
+    height: 25px;
+    background: linear-gradient(to bottom, rgba(0, 255, 157, 0.15), transparent);
+    border-radius: 1px;
+    z-index: 0; /* Mis en arrière-plan */
 }
 
 /* Style de base des noeuds (Pill shape & modern shadows) */
@@ -100,23 +115,27 @@
     letter-spacing: 0.5px;
     cursor: pointer;
     position: relative;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    /* Animation fluide avec effet de rebond */
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: 100%;
+    line-height: 1.4;
+    box-sizing: border-box;
+    z-index: 2; /* Passe AU-DESSUS des lignes de connexion */
 }
 
 /* Le noeud racine */
 .noeud-racine {
     background: linear-gradient(135deg, #008c66, #00ff9d);
     color: #04102a;
-    padding: 18px 40px;
-    font-size: 1.2rem;
+    padding: 20px 45px;
+    font-size: 1.25rem;
     border-radius: 40px;
     cursor: default;
-    box-shadow: 0 8px 25px rgba(0, 255, 157, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 255, 157, 0.4);
     border: none;
-    z-index: 2;
+    z-index: 5;
+    width: auto;
 }
 
 /* --- Couleurs des niveaux --- */
@@ -146,18 +165,19 @@
 }
 
 .noeud-arbre-expert {
-    background-color: #000000;
+    background-color: #0a0a0a;
     color: #ffffff;
     /* Ajout d'une bordure subtile pour qu'il reste visible sur fond sombre */
-    border: 1px solid rgba(0, 255, 157, 0.4); 
+    border: 2px solid rgba(0, 255, 157, 0.5); 
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.1);
 }
 
 /* --- Effets au survol (Hover) --- */
 .noeud-arbre:not(.noeud-racine):hover {
     transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 12px 25px rgba(0, 255, 157, 0.25);
-    border-color: rgba(0, 255, 157, 0.8);
-    z-index: 100;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 255, 157, 0.2);
+    border-color: rgba(0, 255, 157, 0.9);
+    z-index: 10;
 }
 
 /* --- Tooltips Premium --- */
@@ -217,7 +237,6 @@
     visibility: visible;
     transform: translateX(-50%) translateY(0);
 }
-
 
 /* --- Légende améliorée --- */
 .legend {
