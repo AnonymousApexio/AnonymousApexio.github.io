@@ -1,0 +1,187 @@
+.rootme-section {
+    margin-top: 2rem;
+}
+.rootme-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+@media (max-width: 768px) {
+    .rootme-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.rootme-card {
+    background: var(--card-bg, #1a1a2e);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.rootme-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+.rootme-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.rootme-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+}
+.rootme-card-title .badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    margin-left: 0.5rem;
+    display: inline-block;
+}
+.badge-tronc {
+    background: #2d6a4f;
+    color: #a7f3d0;
+}
+.badge-specialite {
+    background: #6b21a5;
+    color: #d8b4fe;
+}
+.rootme-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+@media (max-width: 480px) {
+    .rootme-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.rootme-stat {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 0.6rem 0.3rem;
+}
+.rootme-stat .value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #60a5fa;
+    display: block;
+}
+.rootme-stat .label {
+    font-size: 0.65rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.rootme-progress {
+    margin: 1rem 0 0.5rem 0;
+}
+.rootme-progress-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+.rootme-progress-bar .fill {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #60a5fa, #a78bfa);
+    transition: width 0.6s ease;
+}
+.rootme-progress .label-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #d1d5db;
+}
+.rootme-modules {
+    margin-top: 1rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.rootme-modules::-webkit-scrollbar {
+    width: 4px;
+}
+.rootme-modules::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+.rootme-modules::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    border-radius: 4px;
+}
+.rootme-module-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+}
+.rootme-module-item .name {
+    color: #e5e7eb;
+}
+.rootme-module-item .pts {
+    color: #60a5fa;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.rootme-module-item .status {
+    font-size: 0.6rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    background: #2d6a4f;
+    color: #a7f3d0;
+}
+.rootme-module-item .status.pending {
+    background: #92400e;
+    color: #fcd34d;
+}
+.rootme-summary {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.rootme-summary-item {
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+.rootme-summary-item strong {
+    color: #e5e7eb;
+}
+.rootme-card .expand-btn {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #9ca3af;
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+    margin-top: 0.5rem;
+}
+.rootme-card .expand-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+.rootme-card .module-list-collapsible {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+.rootme-card .module-list-collapsible.open {
+    max-height: 600px;
+}

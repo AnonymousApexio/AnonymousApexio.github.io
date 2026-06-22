@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SAÉ 3.Cyber.04 - Découvrir le pentesting. Mise en œuvre d'une démarche de test d'intrusion éthique.">
+    <meta name="keywords"
+        content="pentesting, cybersecurity, SAE, Root-Me, Metasploit, Nmap, vulnerability, cyber kill chain, portfolio, Amory Ryan">
+    <meta name="author" content="Amory Ryan">
+    <meta property="og:image" content="../static/images/mulDLN.jpg">
+    <title>SAÉ 3.Cyber.04 - Pentesting</title>
+    <link rel="stylesheet" href="../static/base.css">
+    <link rel="stylesheet" href="../static/projet.css">
+    <link rel="stylesheet" href="../static/nav.css">
+    <link rel="stylesheet" href="../static/responsive.css">
+    <link rel="stylesheet" href="../static/rootme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../scripts.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../static/images/muIDLN.jpg" alt="Mon Logo">
+            <span>Portfolio Amory Ryan</span>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Accueil</a>
+            <a href="../about_me.html">À propos</a>
+            <a href="../projets.html">Projets</a>
+        </div>
+        <button class="appointment-button">Rendez-vous<br>(Ne fait rien actuellement)</button>
+    </nav>
+
+    <!-- Project Container -->
+    <div class="project-container">
+        <div class="project-header">
+            <h1 class="project-title">SAÉ 3.Cyber.04 - Découvrir le pentesting</h1>
+            <p class="project-subtitle">Mise en œuvre d'une démarche de test d'intrusion éthique : reconnaissance, recherche de vulnérabilités et exploitation contrôlée</p>
+            <a href="https://github.com/AnonymousApexio/RootMe_Writeups" class="github-link">
+                <i class="fab fa-github"></i>
+                Voir les write-ups sur GitHub
+            </a>
+        </div>
+
+        <!-- Project Description -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-info-circle"></i> Description du projet</h2>
+            <div class="section-content">
+                <p>La SAÉ 3.Cyber.04 est un projet de <strong>test d'intrusion éthique</strong> qui vise à faire découvrir la méthodologie complète du pentesting, de la reconnaissance à l'exploitation, en passant par la recherche de vulnérabilités. Ce projet s'inscrit dans la spécialité Cybersécurité du BUT Réseaux et Télécommunications.</p>
+
+                <p>Le professionnel R&T spécialisé dans la Cybersécurité doit collecter et exploiter le maximum d'éléments sur son système d'information, cible potentielle d'attaques, afin d'en assurer la sécurité. Il utilise tous les moyens à sa disposition (techniques, ingénierie sociale, recherche internet, ...), tout en respectant une approche <strong>éthique</strong> en accord avec la réglementation (RGPD par exemple) et la charte informatique de l'entreprise.</p>
+
+                <p>Ce projet a été réalisé en individuel dans le cadre du BUT Réseaux et Télécommunications, avec pour objectif de valider les compétences fondamentales en cybersécurité offensive.</p>
+
+                <div style="margin-top: 1rem; background: rgba(255,255,255,0.04); border-radius: 8px; padding: 1rem; border-left: 3px solid #60a5fa;">
+                    <h4 style="color: #60a5fa; margin-bottom: 0.5rem;"><i class="fas fa-sitemap"></i> Les 7 phases de la Cyber Kill Chain</h4>
+                    <p style="font-size: 0.9rem; color: #d1d5db;">Reconnaissance → Armement → Livraison → Exploitation → Installation → Commandement & Contrôle → Actions sur l'objectif</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-tasks"></i> Compétences développées</h2>
+            <div class="competencies-grid">
+                <!-- AC24.01Cyber -->
+                <div class="competency-card">
+                    <div class="competency-header">
+                        <div class="competency-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <div class="competency-code">AC24.01Cyber</div>
+                            <div class="competency-title">Bonnes pratiques de cybersécurité</div>
+                        </div>
+                    </div>
+                    <p class="competency-description">Connaître et utiliser les bonnes pratiques et les recommandations de cybersécurité dans le cadre d'un audit de sécurité.</p>
+                </div>
+
+                <!-- AC24.05Cyber -->
+                <div class="competency-card">
+                    <div class="competency-header">
+                        <div class="competency-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div>
+                            <div class="competency-code">AC24.05Cyber</div>
+                            <div class="competency-title">Types d'attaques</div>
+                        </div>
+                    </div>
+                    <p class="competency-description">Connaître les différents types d'attaque (injection SQL, XSS, élévation de privilèges, etc.) et savoir les identifier.</p>
+                </div>
+
+                <!-- AC24.06Cyber -->
+                <div class="competency-card">
+                    <div class="competency-header">
+                        <div class="competency-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div>
+                            <div class="competency-code">AC24.06Cyber</div>
+                            <div class="competency-title">Documents techniques en anglais</div>
+                        </div>
+                    </div>
+                    <p class="competency-description">Comprendre des documents techniques en anglais (CVE, documentation d'outils, rapports de sécurité).</p>
+                </div>
+
+                <!-- AC25.01Cyber -->
+                <div class="competency-card">
+                    <div class="competency-header">
+                        <div class="competency-icon">
+                            <i class="fas fa-umbrella"></i>
+                        </div>
+                        <div>
+                            <div class="competency-code">AC25.01Cyber</div>
+                            <div class="competency-title">Protections anti-malware</div>
+                        </div>
+                    </div>
+                    <p class="competency-description">Administrer les protections contre les logiciels malveillants et comprendre les mécanismes de défense.</p>
+                </div>
+
+                <!-- AC25.02Cyber -->
+                <div class="competency-card">
+                    <div class="competency-header">
+                        <div class="competency-icon">
+                            <i class="fas fa-toolbox"></i>
+                        </div>
+                        <div>
+                            <div class="competency-code">AC25.02Cyber</div>
+                            <div class="competency-title">Outils de test de pénétration</div>
+                        </div>
+                    </div>
+                    <p class="competency-description">Prendre en main des outils de test de pénétration réseau/système : Nmap, Metasploit, Hydra, BurpSuite, etc.</p>
+                </div>
+
+                <!-- Compétence ciblée -->
+                <div class="competency-card" style="grid-column: 1 / -1; border-color: rgba(96, 165, 250, 0.3);">
+                    <div class="competency-header">
+                        <div class="competency-icon">
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+                        <div>
+                            <div class="competency-code">Compétence ciblée</div>
+                            <div class="competency-title">Administrer un système d'information sécurisé / Surveiller un système d'information sécurisé</div>
+                        </div>
+                    </div>
+                    <p class="competency-description">Ce projet a permis de développer une expertise complète dans la conduite d'un test d'intrusion éthique, de la phase de reconnaissance (whois, DNS, scan de ports) à la recherche de vulnérabilités (Metasploit, Hydra) en passant par l'exploitation contrôlée, le tout en respectant le cadre légal et les bonnes pratiques de cybersécurité.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-tools"></i> Technologies et concepts maîtrisés</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="tech-name">Nmap / Zenmap</div>
+                    <div class="tech-description">Scan de ports, détection d'OS, découverte de services et versions</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-skull"></i>
+                    </div>
+                    <div class="tech-name">Metasploit</div>
+                    <div class="tech-description">Exploitation de vulnérabilités, reverse shell, post-exploitation</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="tech-name">Hydra / Ncrack</div>
+                    <div class="tech-description">Attaques par dictionnaire et bruteforce sur protocoles variés</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="tech-name">SQLmap</div>
+                    <div class="tech-description">Injection SQL automatisée et extraction de données</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="tech-name">BurpSuite</div>
+                    <div class="tech-description">Proxy web, interception et modification de requêtes HTTP</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <div class="tech-name">Social Engineering Toolkit</div>
+                    <div class="tech-description">Phishing, clone de sites, création de documents piégés</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="tech-name">Aircrack-ng</div>
+                    <div class="tech-description">Analyse et craquage de clés WiFi (WPA/WPA2)</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <div class="tech-name">Hashcat / John</div>
+                    <div class="tech-description">Craquage de mots de passe hors-ligne (CPU/GPU)</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <div class="tech-name">Cyber Kill Chain</div>
+                    <div class="tech-description">Méthodologie en 7 phases de l'attaque informatique</div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="tech-name">Reconnaissance</div>
+                    <div class="tech-description">Whois, DNS, OSINT, ingénierie sociale, scan de ports</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-images"></i> Galerie du projet</h2>
+            <div class="gallery">
+                <div class="gallery-item" data-index="0">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pentesting - Vue d'ensemble">
+                    <div class="gallery-caption">Vue d'ensemble des outils de pentesting utilisés (Kali Linux, Metasploit, Nmap)</div>
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Scan de réseau">
+                    <div class="gallery-caption">Phase de reconnaissance : scan de réseau avec Nmap et découverte de services</div>
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Metasploit console">
+                    <div class="gallery-caption">Exploitation avec Metasploit : configuration de payloads et reverse shell</div>
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Analyse de vulnérabilités">
+                    <div class="gallery-caption">Analyse de vulnérabilités avec OpenVAS et recherche de CVE</div>
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Root-Me plateforme">
+                    <div class="gallery-caption">Plateforme Root-Me : progression dans les modules et challenges</div>
+                </div>
+                <div class="gallery-item" data-index="5">
+                    <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rapport de pentest">
+                    <div class="gallery-caption">Rédaction du rapport de pentest : conclusions et recommandations</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Méthodologie -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-cogs"></i> Méthodologie appliquée</h2>
+            <div class="section-content">
+                <p>Pour mener à bien ce projet de test d'intrusion, j'ai adopté une approche structurée en suivant les phases de la <strong>Cyber Kill Chain</strong> :</p>
+
+                <ol>
+                    <li><strong>Reconnaissance</strong> : Collecte d'informations sur la cible (whois, DNS, OSINT, analyse du site web, ingénierie sociale, scan de ports avec Nmap).</li>
+                    <li><strong>Armement</strong> : Préparation des outils et des payloads (Metasploit, msfvenom, personnalisation de dictionnaires).</li>
+                    <li><strong>Livraison</strong> : Transmission des payloads à la cible (phishing, clé USB piégée, documents malveillants).</li>
+                    <li><strong>Exploitation</strong> : Déclenchement du code vulnérabilité (SQL injection avec SQLmap, exploitation Metasploit, brute force Hydra).</li>
+                    <li><strong>Installation</strong> : Mise en place d'une backdoor / persistance (service_persistence, cron, scheduled tasks).</li>
+                    <li><strong>Commandement &amp; Contrôle</strong> : Établissement d'un canal de communication (reverse shell, session Meterpreter).</li>
+                    <li><strong>Actions sur l'objectif</strong> : Post-exploitation (extraction de mots de passe, énumération, pivot réseau).</li>
+                </ol>
+
+                <p style="margin-top: 1rem;">Chaque phase a été documentée dans des <strong>write-ups</strong> disponibles sur le dépôt GitHub, avec les commandes, les résultats et les analyses. Le projet a été réalisé dans le respect du <strong>cadre légal</strong> (Loi Godfrain, convention d'audit) et des bonnes pratiques éthiques.</p>
+            </div>
+        </section>
+
+        <!-- Root-Me Progress -->
+        <section class="section rootme-section">
+            <h2 class="section-title"><i class="fas fa-trophy"></i> Progression sur Root-Me</h2>
+            <div class="section-content">
+                <p>Dans le cadre de cette SAÉ, j'ai travaillé sur la plateforme <strong>Root-Me</strong> pour acquérir les compétences techniques en cybersécurité. Voici l'avancement dans les deux parcours :</p>
+
+                <div class="rootme-grid">
+                    <!-- Tronc commun -->
+                    <div class="rootme-card">
+                        <div class="rootme-card-header">
+                            <div class="rootme-card-title">
+                                EDU | BUT - Tronc commun
+                                <span class="badge badge-tronc">100 %</span>
+                            </div>
+                            <span style="font-size: 0.75rem; color: #9ca3af;">Session en cours</span>
+                        </div>
+                        <div class="rootme-stats">
+                            <div class="rootme-stat">
+                                <span class="value">9 590</span>
+                                <span class="label">Points</span>
+                            </div>
+                            <div class="rootme-stat">
+                                <span class="value">18</span>
+                                <span class="label">Modules</span>
+                            </div>
+                            <div class="rootme-stat">
+                                <span class="value">75</span>
+                                <span class="label">Challenges</span>
+                            </div>
+                            <div class="rootme-stat">
+                                <span class="value">55,3 %</span>
+                                <span class="label">Taux de validation</span>
+                            </div>
+                        </div>
+                        <div class="rootme-progress">
+                            <div class="label-row">
+                                <span>Avancement</span>
+                                <span>100 %</span>
+                            </div>
+                            <div class="rootme-progress-bar">
+                                <div class="fill" style="width:100%;"></div>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleModules(this)">Afficher les modules ▼</button>
+                        <div class="module-list-collapsible">
+                            <div class="rootme-modules">
+                                <div class="rootme-module-item"><span class="name">EDU-B | Injection SQL - Introduction</span><span class="pts">1 650 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | HTTP - Intermédiaire</span><span class="pts">1 150 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | AWS - Introduction</span><span class="pts">1 100 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Modbus - Introduction</span><span class="pts">1 050 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Analyse PCAP - Intermédiaire</span><span class="pts">750 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Protocole - Intermédiaire</span><span class="pts">750 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Programmation TCP - Intermédiaire</span><span class="pts">700 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Programmation HTTP - Intermédiaire</span><span class="pts">500 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | MQTT - Introduction</span><span class="pts">450 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Cryptographie - Introduction</span><span class="pts">400 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Cryptanalyse - Introduction</span><span class="pts">300 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Linux - Introduction</span><span class="pts">190 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Notions - Encodages</span><span class="pts">130 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Programmation - Python</span><span class="pts">120 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Cryptanalyse - Basiques</span><span class="pts">110 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Réseau - Wireshark</span><span class="pts">100 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Stéganographie - Basiques</span><span class="pts">70 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Web - Navigateur Web</span><span class="pts">70 pts</span><span class="status">✓</span></div>
+                            </div>
+                        </div>
+                        <div class="rootme-summary">
+                            <span class="rootme-summary-item"><strong>18</strong> modules complétés</span>
+                            <span class="rootme-summary-item"><strong>75</strong> challenges validés</span>
+                            <span class="rootme-summary-item"><strong>~31h</strong> de travail</span>
+                            <span class="rootme-summary-item">Niveau <strong>Intermédiaire</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Spécialité cyber -->
+                    <div class="rootme-card">
+                        <div class="rootme-card-header">
+                            <div class="rootme-card-title">
+                                EDU | BUT - Spécialité cyber
+                                <span class="badge badge-specialite">26 %</span>
+                            </div>
+                            <span style="font-size: 0.75rem; color: #9ca3af;">Session en cours</span>
+                        </div>
+                        <div class="rootme-stats">
+                            <div class="rootme-stat">
+                                <span class="value">2 580</span>
+                                <span class="label">Points</span>
+                            </div>
+                            <div class="rootme-stat">
+                                <span class="value">5</span>
+                                <span class="label">Modules</span>
+                            </div>
+                            <div class="rootme-stat">
+                                <span class="value">21</span>
+                                <span class="label">Challenges</span>
+                            </div>
+                            <div class="rootme-stat">
+                                <span class="value">63 %</span>
+                                <span class="label">Taux de validation</span>
+                            </div>
+                        </div>
+                        <div class="rootme-progress">
+                            <div class="label-row">
+                                <span>Avancement</span>
+                                <span>26 %</span>
+                            </div>
+                            <div class="rootme-progress-bar">
+                                <div class="fill" style="width:26%;"></div>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleModules(this)">Afficher les modules ▼</button>
+                        <div class="module-list-collapsible">
+                            <div class="rootme-modules">
+                                <div class="rootme-module-item"><span class="name">EDU-B | Injection SQL - Intermédiaire</span><span class="pts">1 850 pts</span><span class="status pending">En cours</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Analyse PCAP - Avancée</span><span class="pts">1 200 pts</span><span class="status pending">En cours</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | SOC AD - Introduction</span><span class="pts">1 200 pts</span><span class="status pending">En cours</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | XSS - Introduction</span><span class="pts">1 150 pts</span><span class="status pending">En cours</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | BLE - Introduction</span><span class="pts">1 050 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | File Upload - Introduction</span><span class="pts">1 050 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | SOC Windows - Introduction</span><span class="pts">1 000 pts</span><span class="status pending">En cours</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | API - Introduction</span><span class="pts">950 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Linux - Privesc - Introduction</span><span class="pts">950 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | SOC Linux - Introduction</span><span class="pts">900 pts</span><span class="status pending">En cours</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | SOC Web - Introduction</span><span class="pts">900 pts</span><span class="status pending">En cours</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | AD - Reconnaissance - Introduction</span><span class="pts">750 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Protocole - Intermédiaire</span><span class="pts">750 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Programmation TCP - Intermédiaire</span><span class="pts">700 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Programmation HTTP - Intermédiaire</span><span class="pts">500 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Cryptographie - Introduction</span><span class="pts">400 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Format de logs</span><span class="pts">300 pts</span><span class="status pending">En cours</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Linux - Intermédiaire</span><span class="pts">300 pts</span><span class="status pending">En cours</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Notions - Cyber</span><span class="pts">180 pts</span><span class="status">✓</span></div>
+                                <div class="rootme-module-item"><span class="name">EDU-B | Stéganographie - Introduction 1</span><span class="pts">100 pts</span><span class="status">✓</span></div>
+                            </div>
+                        </div>
+                        <div class="rootme-summary">
+                            <span class="rootme-summary-item"><strong>5</strong> modules complétés</span>
+                            <span class="rootme-summary-item"><strong>21</strong> challenges validés</span>
+                            <span class="rootme-summary-item"><strong>2 580</strong> points</span>
+                            <span class="rootme-summary-item">Niveau <strong>Avancé</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #9ca3af; text-align: center;">
+                    <i class="fas fa-graduation-cap"></i> Progression continue sur la plateforme Root-Me - <a href="https://github.com/AnonymousApexio/RootMe_Writeups" style="color: #60a5fa; text-decoration: none;">Tous les write-ups sont disponibles sur GitHub</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-font-awesome"></i> Conclusion</h2>
+            <div class="section-content">
+                <p><strong>Ce que j'ai appris du projet :</strong><br>
+                Ce projet m'a permis de découvrir en profondeur la méthodologie du pentesting, de la phase de reconnaissance à la rédaction du rapport. J'ai appris à utiliser des outils essentiels comme Nmap, Metasploit, Hydra, SQLmap et BurpSuite, et à comprendre les mécanismes sous-jacents des vulnérabilités (injection SQL, XSS, élévation de privilèges). La plateforme Root-Me a été un excellent terrain d'entraînement pour appliquer ces compétences sur des cas concrets.</p>
+
+                <p><strong>Ce que j'aurais pu faire autrement :</strong><br>
+                J'aurais pu commencer les writes-ups depuis le début et consacrer plus de temps à la compréhension des mécanismes de contournement des protections. La rédaction des write-ups aurait aussi pu être plus structurée pour faciliter la relecture et le partage des connaissances.</p>
+
+                <p><strong>Ce que j'ai pensé du projet :</strong><br>
+                Ce projet a été une expérience enrichissante qui m'a permis de concrétiser les notions théoriques vues en cours. La dimension éthique du pentesting est fondamentale et j'ai pris conscience de l'importance de respecter le cadre légal et les bonnes pratiques. La progression sur Root-Me a été un moteur de motivation constant et m'a donné envie d'explorer des sujets plus avancés en cybersécurité.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <div class="lightbox-nav">
+            <button class="lightbox-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ryan-amory-apex" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/AnonymousApexio" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://tryhackme.com/r/p/FondationSCP91" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        class="social-icon">
+                        <path fill="#fff"
+                            d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5a4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27A3.273 3.273 0 0 1 6.59 7.08a.625.625 0 0 0 .7-1.035a4.5 4.5 0 0 0-1.68-.69a5.22 5.22 0 0 1 5.096-4.104a5.22 5.22 0 0 1 5.174 4.57a5 5 0 0 0-.488.305a.625.625 0 1 0 .731 1.013a3.25 3.25 0 0 1 1.912-.616a3.28 3.28 0 0 1 3.203 2.61a.625.625 0 0 0 1.225-.251a4.53 4.53 0 0 0-4.428-3.61a4.5 4.5 0 0 0-.958.105C16.556 2.328 13.9 0 10.705 0m5.192 10.64a.9.9 0 0 0-.462.108a.9.9 0 0 0-.313.29a1.3 1.3 0 0 0-.175.427a2.4 2.4 0 0 0-.054.514q0 .271.054.517q.055.246.175.43a.9.9 0 0 0 .313.297q.19.11.462.11q.27 0 .46-.11a.9.9 0 0 0 .309-.296q.12-.185.173-.431q.054-.246.054-.517q0-.27-.054-.514a1.3 1.3 0 0 0-.173-.426a.9.9 0 0 0-.309-.291a.9.9 0 0 0-.46-.108m6.486 0a.9.9 0 0 0-.462.108a.9.9 0 0 0-.313.29a1.3 1.3 0 0 0-.175.427a2.4 2.4 0 0 0-.053.514q0 .271.053.517q.055.246.175.43a.9.9 0 0 0 .313.297q.19.11.462.11q.27 0 .46-.11a.9.9 0 0 0 .31-.296q.117-.185.172-.431t.054-.517q0-.27-.054-.514a1.3 1.3 0 0 0-.173-.426a.9.9 0 0 0-.308-.291a.9.9 0 0 0-.461-.108m-8.537.068l-.84.618l.313.43l.476-.368v1.877h.603v-2.557zm6.486 0l-.841.618l.314.43l.477-.368v1.877h.603v-2.557zm-4.435.445q.119 0 .193.084q.074.085.114.21q.039.125.054.269a2.5 2.5 0 0 1 0 .533q-.015.145-.054.27a.6.6 0 0 1-.114.21a.24.24 0 0 1-.193.085a.25.25 0 0 1-.195-.086a.6.6 0 0 1-.118-.209a1.3 1.3 0 0 1-.056-.27a2.7 2.7 0 0 1 0-.533q.015-.144.056-.27a.6.6 0 0 1 .118-.209a.25.25 0 0 1 .195-.084m6.486 0q.12 0 .193.084q.074.085.114.21t.054.269a2.5 2.5 0 0 1 0 .533q-.014.145-.054.27a.6.6 0 0 1-.114.21a.24.24 0 0 1-.193.085a.25.25 0 0 1-.195-.086a.6.6 0 0 1-.117-.209a1.3 1.3 0 0 1-.056-.27a2.6 2.6 0 0 1 0-.533q.014-.144.056-.27a.6.6 0 0 1 .117-.209a.25.25 0 0 1 .195-.084m-2.191 3.51a.93.93 0 0 0-.463.109a.9.9 0 0 0-.312.291q-.12.182-.175.426a2.4 2.4 0 0 0-.054.514q0 .27.054.516t.175.432a.9.9 0 0 0 .312.296a.9.9 0 0 0 .463.11q.27 0 .46-.11a.9.9 0 0 0 .308-.296a1.3 1.3 0 0 0 .174-.432q.054-.245.054-.516q0-.27-.054-.514a1.3 1.3 0 0 0-.174-.426a.9.9 0 0 0-.309-.291a.9.9 0 0 0-.46-.108zm-6.402.07l-.841.617l.314.43l.476-.369v1.878h.604v-2.557zm2.125 0l-.841.617l.314.43l.477-.369v1.878h.603v-2.557zm2.116 0l-.84.617l.313.43l.477-.369v1.878h.603v-2.557zm2.16.443q.12 0 .194.085a.6.6 0 0 1 .114.21q.04.124.053.269a2.6 2.6 0 0 1 0 .532a1.3 1.3 0 0 1-.053.27a.6.6 0 0 1-.114.21a.24.24 0 0 1-.193.085a.25.25 0 0 1-.196-.085a.6.6 0 0 1-.117-.21a1.3 1.3 0 0 1-.056-.27a2.6 2.6 0 0 1 0-.532q.014-.145.056-.27a.6.6 0 0 1 .117-.209a.25.25 0 0 1 .196-.085zm-6.729 3.073a.7.7 0 0 0-.335.078a.66.66 0 0 0-.227.211a.9.9 0 0 0-.127.31q-.04.177-.04.373c0 .196.013.256.04.375a.9.9 0 0 0 .127.313a.65.65 0 0 0 .227.215q.138.08.335.08a.66.66 0 0 0 .334-.08a.65.65 0 0 0 .225-.215q.086-.135.125-.313a2 2 0 0 0 .04-.375q0-.195-.04-.373a.9.9 0 0 0-.125-.31a.66.66 0 0 0-.225-.21a.7.7 0 0 0-.334-.08zm3.086 0a.7.7 0 0 0-.336.078a.66.66 0 0 0-.226.211a.9.9 0 0 0-.127.31a1.7 1.7 0 0 0-.04.373q0 .197.04.375a.9.9 0 0 0 .127.313q.088.135.226.215q.14.08.336.08a.66.66 0 0 0 .334-.08a.65.65 0 0 0 .224-.215q.087-.135.126-.313a1.75 1.75 0 0 0 0-.748a1 1 0 0 0-.126-.31a.66.66 0 0 0-.224-.21a.7.7 0 0 0-.334-.08zm5.108 0a.7.7 0 0 0-.336.078a.66.66 0 0 0-.226.211a.9.9 0 0 0-.127.31q-.04.177-.04.373c0 .196.013.256.04.375a.9.9 0 0 0 .127.313q.087.135.226.215q.14.08.336.08t.334-.08a.65.65 0 0 0 .224-.215q.087-.135.126-.313a2 2 0 0 0 .04-.375q0-.195-.04-.373a1 1 0 0 0-.126-.31a.66.66 0 0 0-.224-.21a.7.7 0 0 0-.334-.08zm-6.658.05l-.61.448l.227.311l.346-.266v1.362h.438v-1.856zm3.068 0l-.61.448l.227.311l.346-.266v1.362h.438v-1.856zm5.108 0l-.611.448l.228.311l.346-.266v1.362h.438v-1.856zm-9.712.322q.087 0 .14.062a.4.4 0 0 1 .083.151a1 1 0 0 1 .04.196a2 2 0 0 1 0 .386a1 1 0 0 1-.04.197a.4.4 0 0 1-.083.152a.18.18 0 0 1-.14.061a.18.18 0 0 1-.141-.06a.4.4 0 0 1-.085-.153a1 1 0 0 1-.041-.197a2 2 0 0 1 0-.386a1 1 0 0 1 .04-.196a.4.4 0 0 1 .086-.151a.18.18 0 0 1 .141-.062m3.086 0q.086 0 .14.062a.4.4 0 0 1 .082.151a1 1 0 0 1 .04.196a2 2 0 0 1 0 .386a1 1 0 0 1-.04.197a.4.4 0 0 1-.082.152a.18.18 0 0 1-.14.061a.18.18 0 0 1-.141-.06a.4.4 0 0 1-.086-.153a1 1 0 0 1-.04-.197a2 2 0 0 1-.011-.195q0-.086.01-.191a1 1 0 0 1 .041-.196a.4.4 0 0 1 .086-.151a.18.18 0 0 1 .141-.062m5.108 0q.087 0 .14.062a.4.4 0 0 1 .082.151a1 1 0 0 1 .04.196a2 2 0 0 1 0 .386a1 1 0 0 1-.04.197a.4.4 0 0 1-.082.152a.18.18 0 0 1-.14.061a.18.18 0 0 1-.142-.06a.4.4 0 0 1-.085-.153a1 1 0 0 1-.04-.197a2 2 0 0 1-.011-.195q0-.086.01-.191a1 1 0 0 1 .04-.196a.5.5 0 0 1 .086-.151a.18.18 0 0 1 .142-.062m-1.684 1.814a.7.7 0 0 0-.336.079a.66.66 0 0 0-.227.21a.9.9 0 0 0-.127.31a1.7 1.7 0 0 0 0 .748a1 1 0 0 0 .127.314q.088.135.227.215q.14.08.336.08a.66.66 0 0 0 .334-.08a.65.65 0 0 0 .224-.215q.087-.135.126-.314a1.7 1.7 0 0 0-.001-.747a.9.9 0 0 0-.125-.31a.65.65 0 0 0-.224-.211a.7.7 0 0 0-.334-.079m3.063 0a.7.7 0 0 0-.336.079a.7.7 0 0 0-.227.21a.9.9 0 0 0-.127.31a1.7 1.7 0 0 0 0 .748a.9.9 0 0 0 .127.314a.66.66 0 0 0 .227.215q.138.08.336.08a.65.65 0 0 0 .334-.08a.65.65 0 0 0 .223-.215q.087-.135.126-.314a1.7 1.7 0 0 0 0-.747a.9.9 0 0 0-.126-.31a.65.65 0 0 0-.223-.211a.7.7 0 0 0-.334-.079m-1.545.05l-.611.448l.228.312l.346-.267v1.363h.438v-1.856zm-1.518.323q.086 0 .14.061a.4.4 0 0 1 .082.152a1 1 0 0 1 .04.195a2 2 0 0 1 0 .387a1 1 0 0 1-.04.197a.4.4 0 0 1-.082.152a.18.18 0 0 1-.14.06a.18.18 0 0 1-.142-.06a.4.4 0 0 1-.085-.152a1 1 0 0 1-.04-.197a2 2 0 0 1-.011-.195q0-.087.01-.192a1 1 0 0 1 .041-.195q.03-.09.085-.152a.18.18 0 0 1 .142-.061m3.063 0q.086 0 .14.061a.4.4 0 0 1 .082.152a1 1 0 0 1 .04.195a2 2 0 0 1 0 .387a1 1 0 0 1-.04.197a.4.4 0 0 1-.083.152a.18.18 0 0 1-.14.06a.18.18 0 0 1-.141-.06a.4.4 0 0 1-.085-.152a1 1 0 0 1-.04-.197a2 2 0 0 1 0-.387a1 1 0 0 1 .04-.195q.03-.09.085-.152a.18.18 0 0 1 .142-.061m-9.713.185a.5.5 0 0 0-.232.055a.46.46 0 0 0-.157.146a.6.6 0 0 0-.089.215a1.2 1.2 0 0 0-.027.259q0 .135.027.26a.7.7 0 0 0 .089.216q.06.094.157.149a.46.46 0 0 0 .232.056q.136-.001.231-.056a.45.45 0 0 0 .156-.149a.7.7 0 0 0 .087-.217a1.2 1.2 0 0 0 0-.518a.7.7 0 0 0-.087-.215a.45.45 0 0 0-.156-.146a.46.46 0 0 0-.23-.055zm1.052.035l-.423.31l.158.217l.24-.185v.944h.303v-1.286zm-1.052.224q.06 0 .097.042a.3.3 0 0 1 .057.105a.7.7 0 0 1 .028.136q.006.073.007.133q0 .06-.007.135a.7.7 0 0 1-.028.136a.3.3 0 0 1-.057.105a.12.12 0 0 1-.097.043a.13.13 0 0 1-.098-.043a.3.3 0 0 1-.059-.105a.6.6 0 0 1-.028-.136a1.4 1.4 0 0 1 0-.268a.6.6 0 0 1 .028-.136a.3.3 0 0 1 .06-.105a.13.13 0 0 1 .097-.042m3.775 1.394a.46.46 0 0 0-.232.054a.45.45 0 0 0-.157.146a.6.6 0 0 0-.088.214a1.2 1.2 0 0 0 0 .519a.6.6 0 0 0 .088.217a.46.46 0 0 0 .157.15a.46.46 0 0 0 .232.054a.45.45 0 0 0 .232-.055a.45.45 0 0 0 .155-.149a.7.7 0 0 0 .087-.217a1.2 1.2 0 0 0 0-.519a.6.6 0 0 0-.087-.214a.45.45 0 0 0-.155-.146a.46.46 0 0 0-.232-.054m1.052.034l-.423.31l.158.216l.24-.185v.945h.303V22.68zm-1.052.223q.06 0 .098.043a.3.3 0 0 1 .057.105a.6.6 0 0 1 .027.135a1.3 1.3 0 0 1 0 .268a.7.7 0 0 1-.027.137a.3.3 0 0 1-.057.105a.12.12 0 0 1-.098.042a.13.13 0 0 1-.098-.042a.3.3 0 0 1-.059-.105a.6.6 0 0 1-.028-.137a1.4 1.4 0 0 1 0-.268a.6.6 0 0 1 .028-.135a.3.3 0 0 1 .06-.105a.12.12 0 0 1 .097-.043" />
+                    </svg>
+                </a>
+
+                <a href="https://app.hackthebox.com/profile/2119308" target="_blank" class="social-icon">
+                    <i class="fa-solid fa-cube"></i>
+                </a>
+                <a href="https://www.root-me.org/Anonymous_Apexio" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                        <path fill="#fff"
+                            d="M21.364 9.897c0-.448-.029-.896-.096-1.325c0-.028-.009-.057-.009-.086c-.582-3.785-3.452-6.894-7.228-7.723a.96.96 0 1 0-1.144 1.144v3.519c0 .057.028.114.076.152a.2.2 0 0 0 .105.029c.019 0 .048 0 .067-.01l1.411-.534a.7.7 0 0 0 .41.286v1.659c-.715.878-1.602 1.669-2.546 2.375l-1.077-2.499a.73.73 0 0 0 .333-.61a.734.734 0 1 0-.734.734h.038l1.125 2.603c-.658.477-1.335.906-2.002 1.297l-3.204-.963a.16.16 0 0 0-.114.01l-.954.372a.734.734 0 1 0 .143.438c0-.028-.009-.057-.009-.086l.896-.352l2.794.839a33.5 33.5 0 0 1-4.873 2.231l-.171.057a.92.92 0 0 0-.553-.181h-.029a8.7 8.7 0 0 1-.677-3.366c0-.572.057-1.135.162-1.678H7.69a.726.726 0 0 0 .706.543a.734.734 0 0 0 0-1.468a.73.73 0 0 0-.706.543h-4.1c.772-3.137 3.251-5.644 6.455-6.388a.98.98 0 0 0 .82.467c.534 0 .963-.429.963-.963S11.399 0 10.865 0a.97.97 0 0 0-.944.763c-4.205.953-7.285 4.739-7.285 9.125a9.3 9.3 0 0 0 .735 3.642a.967.967 0 0 0 .372 1.602v3.757c0 .067.019.134.057.191l.21.143l2.851 2.012v2.403c0 .2.162.362.362.362h9.535c.2 0 .362-.162.362-.362v-2.403l2.861-2.012l.21-.153a.34.34 0 0 0 .057-.19v-3.786a.958.958 0 0 0 .353-1.535a9 9 0 0 0 .763-3.662m-1.383 3.366h-.086a.96.96 0 0 0-.334 1.86v3.509l-3.003 2.117a.36.36 0 0 0-.153.295v2.022a.21.21 0 0 1-.21.209H15.08a.21.21 0 0 1-.21-.209v-.725c0-.191-.133-.362-.324-.382a.367.367 0 0 0-.401.363v.753c0 .115-.095.21-.209.21h-1.364a.21.21 0 0 1-.21-.21v-1.116c0-.19-.133-.362-.324-.381a.366.366 0 0 0-.4.362v1.145a.21.21 0 0 1-.21.209h-1.364a.21.21 0 0 1-.209-.209v-.744c0-.191-.134-.362-.325-.382a.366.366 0 0 0-.4.363v.753c0 .115-.095.21-.21.21H7.805a.21.21 0 0 1-.21-.21v-2.021a.37.37 0 0 0-.153-.296l-2.994-2.117v-3.547a.96.96 0 0 0 .563-.877c0-.057-.01-.114-.019-.172c.381-.133 3.289-1.173 6.15-2.956c3.871-2.412 6.017-5.149 6.264-7.961a8.74 8.74 0 0 1 3.157 5.473c-.048 4.777-8.372 7.723-8.458 7.752c-.019.009-.067.019-.105.038c-.105-.019-.21-.038-.324-.057c-.076-.019-.162-.029-.239-.048c-.124-.019-.247-.048-.371-.076c-.02-.01-.048-.01-.067-.01l-.143-.028c-.057-.01-.115-.029-.172-.039a5 5 0 0 1-.391-.095c-.238-.057-.467-.124-.696-.181c-.219-.067-.448-.124-.658-.191H8.92a6 6 0 0 1-.467-.152a1 1 0 0 0-.153-.048c-.076-.029-.143-.048-.209-.067a3 3 0 0 1-.344-.124h-.009a6 6 0 0 1-.458-.171c-.143-.058-.267-.105-.362-.143c-.096-.048-.181-.077-.229-.105c-.057-.029-.086-.038-.086-.038s.019.028.057.066c.038.048.096.115.181.191c.077.076.182.172.306.267s.267.2.419.305h.01a2.1 2.1 0 0 0-.096.61c0 1.097.897 1.993 1.993 1.993c.849 0 1.573-.534 1.86-1.287l.295.029c.172.009.334.009.486.009c.01 0 .019.01.029.01l1.611 1.64c.41.41 1.049.477 1.526.162l2.517-1.411a.8.8 0 0 0 .363-.658v-2.899c.972-.772 1.85-1.688 2.422-2.727a8 8 0 0 1-.601 2.145m-7.799 5.87l-.002-.002q-.002-.003-.008-.003l-.013-.009l-.003-.002a.03.03 0 0 1-.013-.009c-.01 0-.019-.009-.029-.009c-.009 0-.019-.01-.019-.01c-.009 0-.019 0-.028-.009h-.115c-.009 0-.019 0-.028.009c-.01 0-.019.01-.019.01c-.01 0-.019.009-.029.009c-.009 0-.019.01-.029.02c-.009 0-.009.009-.019.009l-.038.038l-.772.963a.276.276 0 0 0 .219.448a.28.28 0 0 0 .219-.104l.01-.01a.7.7 0 0 1 1.097 0l.009.01a.287.287 0 0 0 .391.047a.277.277 0 0 0 .048-.391l-.782-.953q-.017-.015-.019-.029l-.019-.019zm-1.622-2.265c-.038.076-.095.152-.143.219a1.256 1.256 0 0 1-1.907 0a1.23 1.23 0 0 1-.295-.81c0-.077.009-.144.019-.22c.152.076.314.153.476.229c.22.095.449.191.687.267a9 9 0 0 0 1.163.315m-6.503-2.184a.5.5 0 0 1-.305-.114a.45.45 0 0 1-.133-.506a.47.47 0 0 1 .429-.295c.085 0 .162.028.229.067a.46.46 0 0 1 .228.4a.46.46 0 0 1-.066.229a.42.42 0 0 1-.382.219m16.21-.181a.48.48 0 0 1-.362.181a.47.47 0 0 1-.334-.143a.47.47 0 0 1-.124-.315c0-.2.124-.371.305-.429a.5.5 0 0 1 .162-.028a.48.48 0 0 1 .458.372a.3.3 0 0 1 .009.095a.7.7 0 0 1-.114.267m-5.845-9.869c0 .029.009.048.009.067l-1.163.438V1.897a.92.92 0 0 0 .658-.457a8.5 8.5 0 0 1 2.823 1.201c-.01 1.411-.554 2.708-1.412 3.881V5.34a.73.73 0 0 0 .544-.706c0-.4-.324-.734-.734-.734a.74.74 0 0 0-.725.734m-3.48-1.735a.734.734 0 0 0-.735.696l-1.458.534a.19.19 0 0 0-.134.181v.925H7.442a.73.73 0 0 0-.705-.544a.735.735 0 1 0 0 1.469a.73.73 0 0 0 .705-.544h1.364a.19.19 0 0 0 .19-.19v-.983l1.288-.476c.124.238.372.4.648.4a.734.734 0 0 0 .734-.734a.725.725 0 0 0-.724-.734m-.41-2.241a.46.46 0 0 1 .343-.153a.468.468 0 1 1-.258.859a.48.48 0 0 1-.209-.382a.45.45 0 0 1 .124-.324m2.097.305a.467.467 0 0 1 .801-.324a.462.462 0 0 1-.076.696a.43.43 0 0 1-.267.086a.45.45 0 0 1-.458-.458" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="contact">
+                <h3>CONTACT</h3>
+                <p><i class="fa fa-envelope"></i> <a href="mailto:apexio-scp@cyberfear.com">apexio-scp@cyberfear.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2026 Apex</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        let currentIndex = 0;
+
+        // Back to top
+        document.querySelector('.back-to-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', () => {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTop.style.opacity = '1';
+                backToTop.style.visibility = 'visible';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.visibility = 'hidden';
+            }
+        });
+
+        // Open lightbox
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                const caption = item.querySelector('.gallery-caption').textContent;
+                currentIndex = parseInt(item.dataset.index);
+                lightboxImg.src = imgSrc;
+                lightboxCaption.textContent = caption;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navigate(-1);
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navigate(1);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'ArrowLeft') navigate(-1);
+                else if (e.key === 'ArrowRight') navigate(1);
+            }
+        });
+
+        function navigate(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = galleryItems.length - 1;
+            else if (currentIndex >= galleryItems.length) currentIndex = 0;
+            const nextItem = Array.from(galleryItems).find(
+                item => parseInt(item.dataset.index) === currentIndex
+            );
+            if (nextItem) {
+                lightboxImg.src = nextItem.querySelector('img').src;
+                lightboxCaption.textContent = nextItem.querySelector('.gallery-caption').textContent;
+                lightboxImg.style.opacity = 0;
+                setTimeout(() => { lightboxImg.style.opacity = 1; }, 10);
+            }
+        }
+
+        // Root-Me module toggles
+        function toggleModules(btn) {
+            const container = btn.parentElement.querySelector('.module-list-collapsible');
+            if (container) {
+                container.classList.toggle('open');
+                btn.textContent = container.classList.contains('open') ? 'Masquer les modules ▲' : 'Afficher les modules ▼';
+            }
+        }
+    </script>
+</body>
+</html>
