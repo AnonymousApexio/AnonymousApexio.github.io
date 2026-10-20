@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAÉ 1.05 - Outil de reporting d'espace disque | Ryan Amory</title>
+  <meta name="description"
+    content="Outil Python/PyQt5 qui parcourt un répertoire, identifie les fichiers les plus volumineux et permet de générer un script PowerShell de suppression sécurisé.">
+  <meta name="author" content="Ryan Amory">
+  <meta property="og:title" content="SAÉ 1.05 - Outil de reporting d'espace disque | Ryan Amory">
+  <meta property="og:description"
+    content="Outil Python/PyQt5 qui parcourt un répertoire, identifie les fichiers les plus volumineux et permet de générer un script PowerShell de suppression sécurisé.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a1120">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233ee6a5'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' text-anchor='middle' fill='%23062018'%3ERA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <a class="sr-only" href="#contenu">Aller au contenu</a>
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="../index.html#top"><span class="brand-mark">RA</span><span>Ryan Amory</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">À Propos</a></li>
+        <li><a href="../index.html#expertise">Expertise</a></li>
+        <li><a href="../index.html#projets">Projets</a></li>
+        <li><a href="../index.html#parcours">Parcours</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-sm btn-primary nav-cta" href="mailto:ryan.amory@uha.fr">Me contacter</a>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="p-hero">
+      <div class="container">
+        <a class="back" href="../index.html#projets"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5m6 6-6-6 6-6" />
+          </svg> Retour aux projets</a>
+        <div><span class="domain" data-d="dev">Développement</span></div>
+        <span class="code">SAÉ 1.05 - BUT 1 - S1</span>
+        <h1>Outil de reporting d'espace disque</h1>
+        <p class="lead">Un outil Python/PyQt5 qui parcourt un répertoire, identifie les fichiers les plus volumineux et
+          permet de générer un script PowerShell de suppression sécurisé - de la collecte de données à la restitution
+          graphique.</p>
+        <dl class="p-facts">
+          <div>
+            <dt>Cadre</dt>
+            <dd>BUT R&amp;T - SAÉ 1.05 « Traitement des données »</dd>
+          </div>
+          <div>
+            <dt>Équipe</dt>
+            <dd>Binôme (Clément &amp; Moi)</dd>
+          </div>
+          <div>
+            <dt>Mon rôle</dt>
+            <dd>Interface PyQt5 et composants graphiques (Script 3)</dd>
+          </div>
+          <div>
+            <dt>Statut</dt>
+            <dd>Terminé</dd>
+          </div>
+        </dl>
+        <div class="p-actions">
+          <a class="btn btn-primary" href="https://github.com/AnonymousApexio/File-Size-Management-Tool" target="_blank"
+            rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" />
+            </svg>Voir le dépôt GitHub</a>
+          <a class="btn" href="../index.html#projets">Tous les projets</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-body">
+      <nav class="toc" aria-label="Sommaire">
+        <p>Sur cette page</p>
+        <ol>
+          <li><a href="#resume">En résumé</a></li>
+          <li><a href="#description">Le projet</a></li>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#demarche">Démarche</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#competences">Compétences BUT mobilisées (Apprentissage Critique)</a></li>
+          <li><a href="#bilan">Bilan</a></li>
+        </ol>
+      </nav>
+      <div class="p-content">
+        <section id="resume">
+          <h2><span class="n">01</span>En résumé</h2>
+          <div class="summary">
+            <div>
+              <h3>Objectif</h3>
+              <p>Identifier les fichiers les plus volumineux d'un répertoire pour aider l'utilisateur à libérer de
+                l'espace disque.</p>
+            </div>
+            <div>
+              <h3>Ma contribution</h3>
+              <p>Conception et développement de l'interface PyQt5 (camembert interactif, légendes paginées avec cases à
+                cocher) et du générateur de script PowerShell de suppression.</p>
+            </div>
+            <div>
+              <h3>Résultat</h3>
+              <p>Une chaîne complète orchestrée par PowerShell : export JSON des 100 plus gros fichiers et suppression
+                protégée par double confirmation.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="description">
+          <h2><span class="n">02</span>Le projet</h2>
+          <p>Projet réalisé dans le cadre de la <b>SAÉ 1.05 « Traitement des données »</b> du BUT Réseaux &amp;
+            Télécommunications. L'objectif est de mettre en oevre une chaîne complète de traitement de données :
+            collecte sur le système de fichiers, filtrage, export au format JSON, puis restitution graphique via une
+            interface PyQt5.</p>
+          <p>L'outil s'adresse à un utilisateur souhaitant faire le tri dans un répertoire encombré (par exemple
+            <code>Downloads</code>) et supprimer en connaissance de cause les fichiers les plus lourds.</p>
+          <ul class="list">
+            <li><b>Sélection interactive</b> : choix du répertoire à analyser via une boîte de dialogue native
+              (<code>QFileDialog</code>).</li>
+            <li><b>Parcours récursif</b> : récupération de tous les fichiers et de leurs tailles sur l'ensemble de
+              l'arborescence.</li>
+            <li><b>Tri et filtrage</b> : conservation des fichiers >= 5 Mo, limités à 100 fichiers maximum.</li>
+            <li><b>Export JSON</b> : sérialisation des résultats dans <code>gros_fichiers.json</code>.</li>
+            <li><b>Visualisation graphique</b> : camembert représentant la répartition des tailles et légendes paginées
+              (25 fichiers par page) avec cases à cocher.</li>
+            <li><b>Génération d'un script PowerShell</b> de suppression des fichiers cochés, avec double confirmation.
+            </li>
+            <li><b>Exécution immédiate</b> du script de suppression depuis l'interface.</li>
+          </ul>
+        </section>
+
+        <section id="architecture">
+          <h2><span class="n">03</span>Architecture</h2>
+          <p>Le projet est organisé de façon modulaire, chaque composant graphique étant isolé dans un fichier dédié
+            afin de faciliter la maintenance.</p>
+          <ul class="list">
+            <li><b>Run_Reporting_Tool.ps1</b> - orchestrateur PowerShell (point d'entrée), enchaîne les trois scripts
+              Python en vérifiant chaque étape.</li>
+            <li><b>Script_1.py</b> - sélection du répertoire via <code>QFileDialog.getExistingDirectory</code>, chemin
+              renvoyé sur <code>stdout</code>.</li>
+            <li><b>Script_2.py</b> - exploration récursive (<code>rglob</code>), tri décroissant, filtrage (≥ 5 Mo, 100
+              fichiers max) et export JSON indenté.</li>
+            <li><b>Script_3.py</b> - interface PyQt5 : chargement du JSON, camembert, onglets de légendes, onglet IHM,
+              génération et exécution du script de suppression.</li>
+            <li><b>Composants graphiques</b> - <code>Creation_Onglets.py</code> (fenêtre principale),
+              <code>Creation_Camembert.py</code> (<code>QPieSeries</code>), <code>Creation_Legendes.py</code> (lignes +
+              cases à cocher), <code>Creation_Boutons.py</code> (bouton + champ texte).</li>
+            <li><b>docs/</b> - rapport PDF et présentation, <b>requirements.txt</b> - dépendances, <b>LICENSE</b> et
+              <b>README.md</b>.</li>
+          </ul>
+        </section>
+
+        <section id="demarche">
+          <h2><span class="n">04</span>Démarche</h2>
+          <ol class="steps">
+            <li><b>Sélection du répertoire</b> : ouverture d'une boîte de dialogue native et capture du chemin choisi
+              par l'utilisateur.</li>
+            <li><b>Analyse</b> : parcours récursif du répertoire, collecte des couples <code>[chemin, taille]</code>,
+              tri décroissant, filtrage à 5 Mo et limitation à 100 fichiers, puis export dans
+              <code>gros_fichiers.json</code>.</li>
+            <li><b>Visualisation</b> : chargement du JSON dans l'interface PyQt5, génération de couleurs aléatoires pour
+              chaque fichier, construction d'une fenêtre à onglets (camembert, légendes paginées, IHM).</li>
+            <li><b>Suppression sécurisée</b> : génération de <code>suppression_fichiers.ps1</code> à partir des fichiers
+              cochés, double saisie manuelle de confirmation (<code>OUI</code> puis <code>OUI</code>), puis exécution
+              via <code>subprocess</code>.</li>
+          </ol>
+        </section>
+
+        <section id="technologies">
+          <h2><span class="n">05</span>Technologies</h2>
+          <dl class="stack">
+            <div>
+              <dt>Python 3.8+</dt>
+              <dd>Langage principal de la chaîne de traitement et de l'interface.</dd>
+            </div>
+            <div>
+              <dt>PyQt5 / QtChart</dt>
+              <dd>Construction de l'IHM, du camembert (<code>QPieSeries</code>) et des onglets.</dd>
+            </div>
+            <div>
+              <dt>PowerShell</dt>
+              <dd>Orchestrateur des scripts Python et exécution du script de suppression.</dd>
+            </div>
+            <div>
+              <dt>JSON</dt>
+              <dd>Format d'échange intermédiaire entre l'analyse et la restitution graphique.</dd>
+            </div>
+            <div>
+              <dt>Git / GitHub</dt>
+              <dd>Gestion de versions et publication du dépôt.</dd>
+            </div>
+          </dl>
+        </section>
+        <section id="competences">
+          <h2><span class="n">06</span>Compétences BUT mobilisées (Apprentissage Critique)</h2>
+          <div class="ac">
+            <details>
+              <summary><code>AC13.01</code>Utiliser un système informatique et ses outils</summary>
+              <p>Exploitation du système de fichiers Windows (parcours récursif, chemins, tailles) via Python, usage de
+                PowerShell comme orchestrateur de la chaîne, gestion de l'environnement Python
+                (<code>requirements.txt</code>) et versionnage avec Git/GitHub.</p>
+            </details>
+            <details>
+              <summary><code>AC13.02</code>Lire, exécuter, corriger et modifier un programme</summary>
+              <p>Lecture et reprise du code du binôme, exécution et débogage des trois scripts Python au fil de
+                l'intégration, correction des erreurs de dialogue entre l'orchestrateur PowerShell et les scripts,
+                modifications itératives des composants PyQt5.</p>
+            </details>
+            <details>
+              <summary><code>AC13.03</code>Traduire un algorithme, dans un langage et pour un environnement donné
+              </summary>
+              <p>Traduction en Python de l'algorithme de collecte (parcours récursif via <code>rglob</code>, tri
+                décroissant par taille, filtrage à 5 Mo et 100 fichiers) et génération automatique du script PowerShell
+                de suppression à partir des fichiers cochés dans l'IHM.</p>
+            </details>
+            <details>
+              <summary><code>AC13.04</code>Connaître l'architecture et les technologies d'un site Web</summary>
+              <p>Non mobilisé directement par ce projet (application desktop PyQt5). Voir la SAÉ 2.03 pour la mise en
+                oeuvre d'une architecture web complète (Django, Nginx, Gunicorn, MySQL).</p>
+            </details>
+            <details>
+              <summary><code>AC13.05</code>Choisir les mécanismes de gestion de données adaptés au développement de
+                l'outil et argumenter ses choix</summary>
+              <p>Choix du format JSON comme mécanisme d'échange entre l'analyse (Script 2) et la restitution graphique
+                (Script 3) : format léger, lisible, standard et structuré, adapté à un volume plafonné à 100 fichiers —
+                une base de données aurait été surdimensionnée pour ce besoin.</p>
+            </details>
+            <details>
+              <summary><code>AC13.06</code>S'intégrer dans un environnement propice au développement et au travail
+                collaboratif</summary>
+              <p>Travail en binôme (Clément &amp; Ryan) avec une répartition claire des rôles : mon coéquipier sur la
+                collecte et l'export, moi sur l'interface PyQt5 et les composants graphiques. La modularité du code (un
+                fichier par composant) a facilité le travail en parallèle, avec un versionnage Git commun sur GitHub.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section id="bilan">
+          <h2><span class="n">07</span>Bilan</h2>
+          <div class="review">
+            <div>
+              <h3>Ce que j'en retiens</h3>
+              <p>Une première expérience complète d'une chaîne de traitement de données, de la collecte jusqu'à la
+                restitution graphique. La séparation en composants m'a fait comprendre l'intérêt de la modularisation et
+                le travail d'équipe de ce projet à été une lesson profitable pour moi.</p>
+            </div>
+            <div>
+              <h3>Avec du recul</h3>
+              <p>Nous avions eu 20/20 sur ce projet, mais avec le recule que j'ai actuellement, je pense que si je
+                devais le refaire, je passerais plus de temps sur la partie documentation à l'origine ainsi que la
+                sécurité du programme en question, particulièrement sur la partie logique métier.</p>
+            </div>
+          </div>
+        </section>
+        <nav class="p-next" aria-label="Autres projets"><a class="btn" href="sae201.html"><-- SAÉ 2.02</a><a class="btn"
+                href="sae104.html">SAÉ 1.04 --></a></nav>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Ryan Amory - BUT Réseaux &amp; Télécommunications, IUT de Colmar</span>
+      <span><a href="mailto:ryan.amory@uha.fr">ryan.amory@uha.fr</a> - <a href="https://www.linkedin.com/in/ryan-amory"
+          target="_blank" rel="noopener">LinkedIn</a> - <a href="https://github.com/AnonymousApexio" target="_blank"
+          rel="noopener">GitHub</a></span>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
